@@ -49,7 +49,14 @@ Depending on your sample the ploidy might be different. For more info. Go [here]
 
 ## Output Plots
 
+
 ![The Read Depth Plot, showing the Position of Sequence (POS) on X axis and Read Depth (DP) on the Y axis, higher depth -> better coverage -> better quality](https://github.com/Shissors/Varaint-Calling-Pipeline/blob/main/read_depth.png)
 
+The Read Depth Plot, showing the Position of Sequence (POS) on X axis and Read Depth (DP) on the Y axis, higher depth -> better coverage -> better quality
+
 ![The variant plot, shows SNPs and INDELs along the genome. The quality on the Y axis and POS on the X axis. Higher quality -> More reliable result](https://github.com/Shissors/Varaint-Calling-Pipeline/blob/main/variant.png)
+
+
+The variant plot, shows SNPs and INDELs along the genome. The quality on the Y axis and POS on the X axis. Higher quality -> More reliable result
+
 
