@@ -1,0 +1,34 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+
+%post
+	conda config --add channels defaults
+	conda config --add channels conda-forge
+	conda config --add channels bioconda
+	
+	conda update -n base conda -y
+
+	conda create -y -n variant_S_env \
+		python=3.11 \
+		fastqc \
+		samtools \
+		bwa \
+		gatk4 \
+		ensembl-vep \
+		pandas \
+		matplotlib \
+		seaborn \
+		plotly \
+		scipy \
+		numpy
+
+	echo "source activate variant_S_env" >> ~/.bashrc
+
+%environment
+	export PATH=/opt/conda/envs/variant_S_env/bin:$PATH
+	source activate variant_S_env
+
+%runscript
+	exec "$@"
+	
+	
