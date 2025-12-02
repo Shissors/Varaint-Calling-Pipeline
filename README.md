@@ -16,7 +16,17 @@ You would also require a reference genome and a sample. For testing, I used the 
 
 ### Installing
 
-Download the singularity images i.e. the [containers]() folder. 
+Download the singularity images i.e. the [containers]() folder. The files here are .def files which must be first converted to .sif files. This can be only done if you have root access to the HPC or you can do it locally as well. Use the command to get a .def file
+
+You would also need 2 other images. [bcftools](https://hub.docker.com/r/biocontainers/bcftools)  and  [Samtools](https://hub.docker.com/r/biocontainers/samtools)
+
+Put all these images in the containers folders.
+
+
+```
+sudo singularity build <variant_image.sif> <variant_image.def>
+```
+
 
 Download the [main.nf (pipeline file) ]() and the [nexflow configuration file]() 
 
