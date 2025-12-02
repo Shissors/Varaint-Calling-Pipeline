@@ -41,52 +41,15 @@ bcftools call -mv --ploidy <change this depending on the sample> -Oz -o ${sample
 ```
 Depending on your sample the ploidy might be different. For more info. Go [here](https://samtools.github.io/bcftools/bcftools.html)
 
-## The modules
+## The Pipeline
 
-Explain what these tests test and why
+![ ](https://github.com/Shissors/Varaint-Calling-Pipeline/blob/main/Pipeline_Diagram.jpg)
 
-```
-Give an example
-```
 
-### And coding style tests
 
-Explain what these tests test and why
+## Output Plots
 
-```
-Give an example
-```
+![The Read Depth Plot, showing the Position of Sequence (POS) on X axis and Read Depth (DP) on the Y axis, higher depth -> better coverage -> better quality]()
 
-## Deployment
+![The variant plot, shows SNPs and INDELs along the genome. The quality on the Y axis and POS on the X axis. Higher quality -> More reliable result]()
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
